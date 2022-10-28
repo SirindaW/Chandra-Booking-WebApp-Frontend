@@ -11,3 +11,4 @@ export const booking1Url = '/booking/superior';
 export const booking2Url = '/booking/deluxe';
 export const booking3Url = '/booking/beach-house';
 export const booking4Url = '/booking/family-premium';
+export const roomdetailUrl = '/roomdetail/:id'

@@ -15,8 +15,9 @@ import Deluxe from './components/Booking/Deluxe/Deluxe.jsx';
 import BeachHouse from './components/Booking/BeachHouse/BeachHouse.jsx';
 import FamilyPremium from './components/Booking/FamilyPremium/FamilyPremium.jsx';
 import ContactUs from './components/Contact/Contact.jsx';
+import Roomdetail from './components/Booking/Roomdetail.jsx';
 import { homeUrl, discoverUrl,offerUrl,offer1Url,offer2Url,offer3Url,offer4Url,
-  bookingUrl,booking1Url,booking2Url,booking3Url,booking4Url, contactUsUrl } from './constants/pathUrl.js';
+  bookingUrl,booking1Url,booking2Url,booking3Url,booking4Url, contactUsUrl,roomdetailUrl } from './constants/pathUrl.js';
 
 const App = () => {
   return (
@@ -38,11 +39,11 @@ const App = () => {
                 <Route path={booking2Url} exact element={<Deluxe />} />
                 <Route path={booking3Url} exact element={<BeachHouse />} />
                 <Route path={booking4Url} exact element={<FamilyPremium />} />
-
-                {/* <Route
+                <Route path={roomdetailUrl} exact element={<Roomdetail/>}/>
+                <Route
                     path="*"
                     element={<Navigate to="/home" replace />}
-                /> */}
+                />
             </Routes>
         </div>
     </BrowserRouter>
